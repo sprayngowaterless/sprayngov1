@@ -390,7 +390,7 @@ p.price{
 .product-name-price {
   color: white;
   margin-top: 0.5rem;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 .quickview-title {
@@ -629,15 +629,13 @@ h3.logo-text{
   }
 
   .product-thumb-image:hover .product-name-price{
-    animation-name: decrease_font;
-    animation-duration: 1s;
-    font-size: 0.6rem;
+    font-size: 0.7rem;
   }
 
-  @keyframes decrease_font {
+  /* @keyframes decrease_font {
     0% {font-size: 0.7rem;}
     100% {font-size: 0.6rem;}
-  }
+  } */
 
   .city-sky-img {
     top: 4rem;
