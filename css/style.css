@@ -103,7 +103,7 @@ header {
 .container-cookie-exit{
   display:flex;
   justify-content:flex-end;
-  width:100%;
+  width: 100%;
 }
 
 .cookie-exit{
@@ -134,7 +134,8 @@ header {
   z-index: -1;
   background-size: cover;
   background-position: 0 0;
-  animation: animate-sky 90s linear infinite;
+  animation: animate-sky 40s linear infinite;
+  display: inline-block;
 }
 
 @keyframes animate-sky {
@@ -158,7 +159,7 @@ header {
   z-index: -1;
   background-size: cover;
   background-position: 0 0;
-  animation: animate 170s linear infinite;
+  animation: animate 90s linear infinite;
 }
 
 @keyframes animate {
@@ -595,8 +596,47 @@ h3.logo-text{
   margin-right: 50%;
 }
 
+/* ----------- Non-Retina Screens ----------- */
+@media screen
+  and (min-device-width: 1200px)
+  and (max-device-width: 1600px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+}
+
+/* ----------- Retina Screens ----------- */
+@media screen
+  and (min-device-width: 1200px)
+  and (max-device-width: 1600px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) {
+
+    .city-img {
+      animation: animate 80s linear infinite;
+    }
+
+    .img {
+      width: 75%;
+      height: 40%;
+      margin-bottom: 8rem;
+    }
+}
+
 @media all and (min-width: 850px) and (max-width: 1300px){
 
+  .city-sky-img {
+    background: url("../City-Sky.PNG");
+    background-repeat: repeat-x;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8rem;
+    z-index: -1;
+    background-size: cover;
+    background-position: 0 0;
+    animation: animate-sky 45s linear infinite;
+    display: inline-block;
+  }
 
   @keyframes animate-sky {
     from {
@@ -604,7 +644,31 @@ h3.logo-text{
     }
 
     to {
-      background-position: 450% 0;
+      background-position: 500% 0;
+    }
+  }
+
+  .city-img {
+    background: url("../Buildings.PNG");
+    background-repeat: repeat-x;
+    position: absolute;
+    top: 8rem;
+    left: 0;
+    width: 100%;
+    height: 63vh;
+    z-index: -1;
+    background-size: cover;
+    background-position: 0 0;
+    animation: animate 90s linear infinite;
+  }
+
+  @keyframes animate {
+    from {
+      background-position: 0 0;
+    }
+
+    to {
+      background-position: 700% 0;
     }
   }
 
@@ -651,6 +715,17 @@ h3.logo-text{
     width: 100%;
     height: 5rem;
     z-index: -1;
+    animation: animate-sky 70s linear infinite;
+  }
+
+  @keyframes animate-sky {
+    from {
+      background-position: 0 0;
+    }
+
+    to {
+      background-position: 400% 0;
+    }
   }
 
   .city-img {
