@@ -183,8 +183,8 @@ header {
 }
 
 .img {
-  width: 55%;
-  height: auto;
+  width: 450px;
+  height: 200px;
   position: relative;
   margin-bottom: 10rem;
   transform: scaleX(-1);
@@ -203,7 +203,7 @@ header {
   background-color: black;
   color: #fff;
   padding: 1rem 1.5rem;
-  margin-top: 14rem;
+  margin-top: 150px;
   text-decoration: none;
   scroll-behavior: smooth;
   margin-left: auto;
@@ -229,7 +229,7 @@ header {
 .showcase .ez {
   position: absolute;
   display: block;
-  margin-top: 8rem;
+  margin-top: 50px;
   height: 8%;
 }
 
@@ -613,12 +613,6 @@ h3.logo-text{
     .city-img {
       animation: animate 80s linear infinite;
     }
-
-    .img {
-      width: 75%;
-      height: 40%;
-      margin-bottom: 8rem;
-    }
 }
 
 @media all and (min-width: 850px) and (max-width: 1300px){
@@ -755,11 +749,8 @@ h3.logo-text{
   .img {
     position: absolute;
     display: block;
-    width: 50%;
-    min-width: 185px;
-    max-width: 250px;
-    height: 8%;
-    min-height: 75px;
+    width: 250px;
+    height: 100px;
     top: 32.7vh;
     margin-bottom: 0
   }
@@ -786,7 +777,7 @@ h3.logo-text{
     height: 2rem;
     margin-top: 0.5rem;
     padding-bottom: 0;
-    top: 51vh;
+    top: 50vh;
   }
 
   .menu-wrap .logo {
