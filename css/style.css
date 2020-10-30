@@ -32,6 +32,7 @@ footer h4{
 
 footer .copyright{
   font-family: 'Poppins', sans-serif;
+  font-size: 0.7rem;
 }
 
 .button-footer{
@@ -133,7 +134,7 @@ header {
   z-index: -1;
   background-size: cover;
   background-position: 0 0;
-  animation: animate-sky 40s linear infinite;
+  animation: animate-sky 90s linear infinite;
 }
 
 @keyframes animate-sky {
@@ -157,25 +158,8 @@ header {
   z-index: -1;
   background-size: cover;
   background-position: 0 0;
-  animation: animate 90s linear infinite;
+  animation: animate 170s linear infinite;
 }
-
-/* .showcase::before {
-  content: '';
-  background: url("../City-Sky.PNG");
-  background-repeat: repeat-x;
-  position: absolute;
-  margin-top: 0;
-  left: 0;
-  width: 100%;
-  height: 8rem;
-  z-index: -1;
-  background-size: cover;
-  background-position: 0 0;
-  animation: animate 25s linear infinite;
-  background-color: white;
-  border: 1px solid red;
-} */
 
 @keyframes animate {
   from {
@@ -377,9 +361,6 @@ p.price{
   transition: .5s ease;
   position: absolute;
   bottom: 0;
-  left: 50%;
-  transform: translate(-50%);
-  -ms-transform: translate(-50%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -403,7 +384,7 @@ p.price{
 
 .product-name-price {
   color: white;
-  font-size: 1rem;
+  font-size: 1vw;
 }
 
 .quickview-title {
@@ -615,6 +596,18 @@ h3.logo-text{
 }
 
 @media all and (min-width: 850px) and (max-width: 1300px){
+
+
+  @keyframes animate-sky {
+    from {
+      background-position: 0 0;
+    }
+
+    to {
+      background-position: 450% 0;
+    }
+  }
+
   .container-product {
     padding: 0 1.5rem;
     padding-bottom: 5rem;
@@ -658,7 +651,6 @@ h3.logo-text{
     width: 100%;
     height: 5rem;
     z-index: -1;
-    animation: animate-sky 100s linear infinite;
   }
 
   .city-img {
@@ -672,14 +664,8 @@ h3.logo-text{
     z-index: -1;
     background-size: cover;
     background-position: 0 0;
-    animation: animate 85s linear infinite;
+    animation: animate 155s linear infinite;
   }
-
-  /* .showcase::before {
-    top:3rem;
-    height: 6rem;
-    animation: animate 70s linear infinite;
-  } */
 
   @keyframes animate {
     from {
@@ -687,7 +673,7 @@ h3.logo-text{
     }
 
     to {
-      background-position: 300% 0;
+      background-position: 400% 0;
     }
   }
 
